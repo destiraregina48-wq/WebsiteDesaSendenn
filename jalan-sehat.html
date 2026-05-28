@@ -1,4 +1,11 @@
-<!DOCTYPE html> <html lang="id"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Kategori Jalan Sehat - Desa Senden</title> <link rel="stylesheet" href="Style.css">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori Jalan Sehat - Desa Senden</title>
+    
+    <link rel="stylesheet" href="style.css">
 
     <style>
         /* Mengatur body website */
@@ -7,6 +14,9 @@
             margin: 0;
             padding: 0;
             font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         /* Section judul utama */
@@ -41,10 +51,9 @@
             line-height: 1.6;
         }
 
-        /* Grid pembungkus card kegiatan (Sudah Diperbarui menjadi 4 Kolom Sejajar) */
+        /* Grid pembungkus card kegiatan (4 Kolom Sejajar) */
         .rangkaian-grid {
             display: grid;
-            /* Memaksa membagi menjadi 4 kolom sejajar rata di desktop */
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
             max-width: 1200px;
@@ -58,7 +67,7 @@
             border: 1px solid #e2e8f0;
             border-top: 5px solid #008000;
             border-radius: 12px;
-            padding: 20px; /* Padding disesuaikan agar pas berjejer 4 */
+            padding: 20px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             transition: transform 0.2s;
         }
@@ -73,12 +82,12 @@
             color: #004d00;
             margin-top: 0;
             margin-bottom: 12px;
-            font-size: 1.25rem; /* Ukuran font disesuaikan tipis */
+            font-size: 1.25rem;
         }
 
         /* Informasi waktu dan lokasi */
         .meta-info {
-            font-size: 0.85rem; /* Ukuran font disesuaikan tipis */
+            font-size: 0.85rem;
             color: #718096;
             margin-bottom: 15px;
             border-bottom: 1px dashed #e2e8f0;
@@ -94,20 +103,30 @@
         .kegiatan-card p {
             color: #4a5568;
             line-height: 1.5;
-            font-size: 0.9rem; /* Ukuran font disesuaikan tipis */
+            font-size: 0.9rem;
             margin: 0;
+        }
+
+        /* Mengatur footer agar rapi di tengah bawah */
+        footer {
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            background-color: #ffffff;
+            margin-top: auto; /* Memaksa footer tetap di paling bawah halaman */
+            box-sizing: border-box;
         }
 
         /* Responsive Breakpoint khusus halaman jalan sehat */
         @media (max-width: 992px) {
             .rangkaian-grid {
-                grid-template-columns: repeat(2, 1fr); /* Tampilan tablet jadi 2 kolom */
+                grid-template-columns: repeat(2, 1fr); /* Tablet jadi 2 kolom */
             }
         }
 
         @media (max-width: 576px) {
             .rangkaian-grid {
-                grid-template-columns: 1fr; /* Tampilan HP jadi 1 kolom memanjang kebawah */
+                grid-template-columns: 1fr; /* HP jadi 1 kolom */
             }
         }
     </style>
