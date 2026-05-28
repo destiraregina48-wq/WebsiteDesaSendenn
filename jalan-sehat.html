@@ -1,0 +1,196 @@
+<!DOCTYPE html> <html lang="id"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Kategori Jalan Sehat - Desa Senden</title> <link rel="stylesheet" href="Style.css">
+
+    <style>
+        /* Mengatur body website */
+        body {
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        /* Section judul utama */
+        .main-title-section {
+            text-align: center;
+            margin: 50px auto 20px auto;
+            max-width: 800px;
+        }
+
+        /* Judul utama */
+        .main-title-section h1 {
+            font-size: 2.5rem;
+            color: #0b2e13;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        /* Garis dekorasi */
+        .title-line {
+            width: 80px;
+            height: 4px;
+            background-color: #28a745;
+            margin: 0 auto 20px auto;
+            border-radius: 2px;
+        }
+
+        /* Sub judul */
+        .subtitle {
+            color: #4a5568;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Grid pembungkus card kegiatan (Sudah Diperbarui menjadi 4 Kolom Sejajar) */
+        .rangkaian-grid {
+            display: grid;
+            /* Memaksa membagi menjadi 4 kolom sejajar rata di desktop */
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto 60px auto;
+            padding: 0 20px;
+        }
+
+        /* Card kegiatan */
+        .kegiatan-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-top: 5px solid #008000;
+            border-radius: 12px;
+            padding: 20px; /* Padding disesuaikan agar pas berjejer 4 */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        /* Efek hover card */
+        .kegiatan-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Judul kegiatan */
+        .kegiatan-card h3 {
+            color: #004d00;
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.25rem; /* Ukuran font disesuaikan tipis */
+        }
+
+        /* Informasi waktu dan lokasi */
+        .meta-info {
+            font-size: 0.85rem; /* Ukuran font disesuaikan tipis */
+            color: #718096;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #e2e8f0;
+            padding-bottom: 10px;
+        }
+
+        /* Tulisan strong */
+        .meta-info strong {
+            color: #2d3748;
+        }
+
+        /* Deskripsi kegiatan */
+        .kegiatan-card p {
+            color: #4a5568;
+            line-height: 1.5;
+            font-size: 0.9rem; /* Ukuran font disesuaikan tipis */
+            margin: 0;
+        }
+
+        /* Responsive Breakpoint khusus halaman jalan sehat */
+        @media (max-width: 992px) {
+            .rangkaian-grid {
+                grid-template-columns: repeat(2, 1fr); /* Tampilan tablet jadi 2 kolom */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .rangkaian-grid {
+                grid-template-columns: 1fr; /* Tampilan HP jadi 1 kolom memanjang kebawah */
+            }
+        }
+    </style>
+</head>
+
+<body> 
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="kategori.html">Kategori Lomba</a>
+        <a href="jalan-sehat.html" class="active">Kategori Jalan Sehat</a>
+        <a href="galeri.html">Galeri Foto</a>
+        <a href="unduhan.html">Unduhan</a>
+        <a href="kontak.html">Info Panitia</a>
+    </nav>
+
+    <section class="main-title-section">
+        <h1>Kegiatan Jalan Sehat</h1>
+        <div class="title-line"></div>
+        <p class="subtitle">
+            Berikut detail kegiatan jalan sehat Desa Senden.
+        </p>
+    </section>
+
+    <section class="container">
+        <div class="rangkaian-grid">
+
+            <div class="kegiatan-card">
+                <h3>Berkumpul & Registrasi</h3>
+                <div class="meta-info">
+                    <strong>Waktu:</strong> 07.00 - 07.30 WIB
+                    <br>
+                    <strong>Lokasi:</strong> Per 4 makam
+                </div>
+                <p>
+                    Peserta melakukan registrasi dan pembagian nomor undian.
+                </p>
+            </div>
+
+            <div class="kegiatan-card">
+                <h3>Pembukaan & Sambutan</h3>
+                <div class="meta-info">
+                    <strong>Waktu:</strong> 08.00 - 08.30 WIB
+                    <br>
+                    <strong>Koordinator:</strong> Ketua Panitia & Kepala Desa
+                </div>
+                <p>
+                    Sambutan pembukaan kegiatan jalan sehat Desa Senden.
+                </p>
+            </div>
+
+            <div class="kegiatan-card">
+                <h3>Pelaksanaan Jalan Sehat</h3>
+                <div class="meta-info">
+                    <strong>Rute:</strong> Mengelilingi Desa Senden
+                    <br>
+                    <strong>Fasilitas:</strong> Air minum panitia
+                </div>
+                <p>
+                    Peserta berjalan bersama mengelilingi desa.
+                </p>
+            </div>
+
+            <div class="kegiatan-card">
+                <h3>Hiburan & Doorprize</h3>
+                <div class="meta-info">
+                    <strong>Waktu:</strong> 10.00 - Selesai
+                    <br>
+                    <strong>Lokasi:</strong> Panggung Utama
+                </div>
+                <p>
+                    Pembagian hadiah dan hiburan untuk warga.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2026 Pemerintah & Panitia Kelurahan Senden. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

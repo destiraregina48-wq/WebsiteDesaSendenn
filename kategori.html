@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Perlombaan Anak - Senden</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Khusus untuk mengatur tata letak kartu agar sejajar rapi */
+        .profil-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        /* Pengaturan kartu individual */
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid #00a859; /* Garis hijau atas seperti di gambar */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        /* CSS untuk mengatur foto di dalam kartu lomba */
+        .card-img {
+            width: 100%;
+            height: 180px; /* Tinggi cetakan foto */
+            object-fit: cover; /* Menjaga proporsi gambar agar tidak gepeng/melar */
+            border-radius: 12px; /* Membuat sudut foto sedikit melengkung */
+            margin-bottom: 15px; /* Jarak antara foto dengan judul lomba */
+            display: block;
+        }
+
+        /* Menjaga tinggi elemen judul agar konten di bawahnya tetap sejajar */
+        .card h3 {
+            font-size: 1.3rem;
+            margin: 5px 0 10px 0;
+            min-height: 55px; 
+            display: flex;
+            align-items: center;
+        }
+
+        /* Styling paragraf deskripsi */
+        .card p {
+            color: #555;
+            line-height: 1.5;
+            margin-top: 10px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body> 
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="kategori.html" class="active">Kategori Lomba</a>
+        <a href="jalan-sehat.html">Kategori Jalan Sehat</a>
+        <a href="galeri.html">Galeri Foto</a>
+        <a href="unduhan.html">Unduhan</a>
+        <a href="kontak.html">Info Panitia</a>
+    </nav>
+
+    <section class="page-section">
+        <div class="container">
+            <h2>Daftar Perlombaan Anak</h2>
+            <div class="line"></div>
+            <p class="lead">
+                Berikut adalah detail perlombaan agustusan anak-anak Desa Senden.
+            </p>
+
+            <div class="filter-container">
+                <button class="filter-btn btn-active" onclick="filterLomba('semua')">Semua Usia</button>
+                <button class="filter-btn" onclick="filterLomba('tk')">Khusus TK</button>
+                <button class="filter-btn" onclick="filterLomba('sd-kecil')">SD Kelas 1-3</button>
+                <button class="filter-btn" onclick="filterLomba('sd-besar')">SD Kelas 4-6</button>
+            </div>
+
+            <!-- Kontainer kartu yang sudah diatur layout Grid-nya -->
+            <div class="profil-cards">
+
+                <!-- Kartu 1 -->
+                <div class="card tk sd-kecil">
+                    <img src="assets/Gambar/2025_08_17_10_14_IMG_6368.jpg" alt="Lomba Memasukkan Sedotan ke Botol" class="card-img">
+                    <h3>Memasukkan Sedotan ke Botol</h3>
+                    <div style="margin: 10px 0; font-size: 0.9rem; color: #00a859; font-weight: bold;">
+                        Peserta: Kategori TK & SD Kelas 1-3
+                    </div>
+                    <p>
+                        Lomba melatih kesabaran dan fokus. Anak-anak harus membawa sedotan lalu memasukkannya ke dalam botol.
+                    </p>
+                </div>
+
+                <!-- Kartu 2 -->
+                <div class="card sd-kecil sd-besar">
+                    <img src="assets/Gambar/2025_08_17_10_51_IMG_6462.jpg" alt="Lomba Menumpuk Kaleng" class="card-img">
+                    <h3>Menumpuk Kaleng</h3>
+                    <div style="margin: 10px 0; font-size: 0.9rem; color: #00a859; font-weight: bold;">
+                        Peserta: Kategori SD Kelas 1-6
+                    </div>
+                    <p>
+                        Lomba menyusun kaleng menjadi piramida lalu merobohkannya kembali.
+                    </p>
+                </div>
+
+                <!-- Kartu 3 -->
+                <div class="card tk">
+                    <img src="assets/Gambar/2025_08_17_10_42_IMG_6447.jpg" alt="Lomba Mewarnai" class="card-img">
+                    <h3>Lomba Mewarnai</h3>
+                    <div style="margin: 10px 0; font-size: 0.9rem; color: #00a859; font-weight: bold;">
+                        Peserta: Kategori Khusus TK
+                    </div>
+                    <p>
+                        Lomba kreativitas anak dengan tema Kemerdekaan Indonesia.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Panitia Semarak Agustus Kelurahan Senden. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

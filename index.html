@@ -1,0 +1,154 @@
+<!DOCTYPE html> <html lang="id"> <head> 
+
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Website Resmi Desa Senden - Beranda</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* CSS khusus halaman index */
+
+        body {
+            display: none;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        /* Menyembunyikan halaman sementara saat website loading */
+
+        header {
+            position: relative;
+            overflow: hidden;
+            background: #538000;
+            width: 100%;
+        }
+        /* Mengatur tampilan bagian header/banner */
+
+        .header-banner {
+            width: 100%;
+            height: auto; /* Mengubah tinggi menjadi auto agar tidak nge-zoom/terpotong */
+            display: block;
+        }
+        /* Mengatur gambar banner agar penuh dan rapi secara proporsional */
+
+    </style>
+</head>
+
+<body> 
+
+    <script>
+        // Mengecek apakah pengunjung sudah pernah masuk website
+        if (!sessionStorage.getItem("sudah_masuk")) {
+
+            // Menampilkan popup selamat datang
+            alert("Selamat Datang di Website Resmi Desa Senden");
+
+            // Menyimpan data bahwa popup sudah pernah muncul
+            sessionStorage.setItem("sudah_masuk", "true");
+        }
+
+        // Menampilkan isi website
+        document.body.style.display = "block";
+
+        // Menampilkan pesan di console browser
+        console.log("Website berjalan dengan baik");
+    </script>
+
+    <header> 
+
+        <img src="assets/Gambar/tugufiks.png" 
+        alt="Banner Desa Senden" 
+        class="header-banner">
+
+        <div class="header-container"> 
+
+            <h1>Website Resmi Desa Senden</h1> 
+
+            <p>Kecamatan Ngawen, Kabupaten Klaten, Jawa Tengah</p> 
+
+        </div>
+    </header>
+
+    <nav id="navbar"> 
+
+        <a href="index.html" class="active">Home</a> 
+        <a href="kategori.html">Kategori Lomba</a> 
+        <a href="jalan-sehat.html">Kategori Jalan Sehat</a> 
+        <a href="galeri.html">Galeri Foto</a> 
+        <a href="unduhan.html">Unduhan</a> 
+        <a href="kontak.html">Info Panitia</a> 
+
+    </nav>
+
+    <section class="page-section">
+
+        <div class="container">
+
+            <div class="deskripsi-box">
+
+                <h2 style="text-align: center;">Profil Desa Senden</h2>
+
+                <div class="line"></div>
+
+                <p>
+                    Selamat datang di portal informasi resmi Desa Senden.
+                </p>
+
+            </div>
+
+            <div class="visi-misi-section">
+
+                <h2 style="text-align: center;">Visi & Misi</h2>
+
+                <div class="line"></div>
+
+                <div class="visi-box">
+
+                    <h4>VISI</h4>
+
+                    <p class="visi-text" style="font-weight: bold !important; font-style: italic !important;">
+                        "NGUPOYO BARENG WARGO SUPOYO DESO BISO TUMOTO."
+                    </p>
+
+                </div>
+
+                <div class="misi-box">
+
+                    <h4>MISI</h4>
+
+                    <ul class="misi-list" style="list-style-type: none; padding: 0; font-weight: bold !important;">
+                        <li>Mewujudkan keamanan desa.</li>
+                        <li>Meningkatkan kesehatan dan kebersihan.</li>
+                        <li>Meningkatkan tata kelola pemerintah desa.</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="event-redirect-box">
+
+                <h2>Event Mendatang & Pengumuman</h2>
+
+                <p>
+                    Informasi acara dan perlombaan desa.
+                </p>
+
+                <a href="event.html" class="btn-event">
+                    Lihat Kalender Event →
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer> 
+
+        <p>
+            &copy; 2026 Pemerintah & Panitia Kelurahan Senden.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script> 
+
+</body>
+</html>

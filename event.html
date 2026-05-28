@@ -1,0 +1,259 @@
+<!DOCTYPE html> <!-- Menentukan tipe dokumen HTML5 -->
+
+<html lang="id"> <!-- Bahasa website Indonesia -->
+
+<head> <!-- Bagian kepala website -->
+
+    <meta charset="UTF-8"> <!-- Agar karakter terbaca normal -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Membuat website responsive -->
+
+    <title>Website Resmi Desa Senden - Event</title>
+    <!-- Judul halaman -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Menghubungkan file CSS -->
+
+    <style>
+
+        /* Mengatur background website */
+        body {
+
+            background: #ffffff;
+
+        }
+
+        /* Mengatur bagian header */
+        header {
+
+            position: relative;
+            overflow: hidden;
+            background: #008000;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        /* Container utama event */
+        .event-container {
+
+            max-width: 850px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        /* Kotak pengumuman */
+        .highlight-box {
+
+            background-color: #e6f4ea;
+            border-left: 6px solid #008000;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+
+        }
+
+        /* Judul pengumuman */
+        .highlight-box h3 {
+
+            color: #004d00;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+
+        }
+
+        /* Isi pengumuman */
+        .highlight-box p {
+
+            font-size: 1.2rem;
+            color: #2d3748;
+            line-height: 1.6;
+
+        }
+
+        /* Container tombol kembali */
+        .btn-kembali-container {
+
+            margin-top: 40px;
+            text-align: center;
+
+        }
+
+        /* Tombol kembali */
+        .btn-kembali {
+
+            display: inline-block;
+            background-color: #008000;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            padding: 14px 35px;
+            box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2);
+            transition: all 0.3s ease;
+
+        }
+
+        /* Efek hover tombol */
+        .btn-kembali:hover {
+
+            background-color: #005900;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 128, 0, 0.3);
+
+        }
+
+    </style>
+
+</head>
+
+<body> <!-- Isi website -->
+
+    <!-- Header halaman -->
+    <header>
+
+        <div class="header-container">
+
+            <!-- Judul halaman -->
+            <h1>
+                Event & Acara Desa Senden
+            </h1>
+
+            <!-- Deskripsi halaman -->
+            <p>
+
+                Ikuti dan meriahkan setiap
+                momen kebersamaan warga
+
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- Navbar/menu navigasi -->
+    <nav id="navbar">
+
+        <!-- Menu home -->
+        <a href="index.html">
+            Home
+        </a>
+
+        <!-- Menu kategori lomba -->
+        <a href="kategori.html">
+            Kategori Lomba
+        </a>
+
+        <!-- Menu jalan sehat -->
+        <a href="jalan-sehat.html">
+            Kategori Jalan Sehat
+        </a>
+
+        <!-- Menu galeri -->
+        <a href="galeri.html">
+            Galeri Foto
+        </a>
+
+        <!-- Menu unduhan -->
+        <a href="unduhan.html">
+            Unduhan
+        </a>
+
+        <!-- Menu kontak -->
+        <a href="kontak.html">
+            Info Panitia
+        </a>
+
+    </nav>
+
+    <!-- Section utama -->
+    <section class="page-section">
+
+        <div class="container">
+
+            <!-- Container isi event -->
+            <div class="event-container">
+
+                <!-- Judul event -->
+                <h2>
+                    Daftar Event Mendatang
+                </h2>
+
+                <!-- Garis dekorasi -->
+                <div class="line"></div>
+
+                <!-- Kotak pengumuman -->
+                <div class="highlight-box">
+
+                    <!-- Judul pengumuman -->
+                    <h3>
+                        📢 Pengumuman Penting!
+                    </h3>
+
+                    <!-- Isi pengumuman -->
+                    <p>
+
+                        <strong>
+                            "Ikutilah Event Agustusan"
+                        </strong>
+
+                    </p>
+
+                    <!-- Penjelasan kegiatan -->
+                    <p>
+
+                        Desa Senden akan mengadakan
+                        perlombaan, jalan sehat,
+                        dan hiburan rakyat.
+
+                    </p>
+
+                </div>
+
+                <!-- Container tombol kembali -->
+                <div class="btn-kembali-container">
+
+                    <!-- Tombol kembali -->
+                    <a 
+                    href="index.html"
+                    class="btn-kembali">
+
+                        ← Kembali ke Beranda
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer website -->
+    <footer>
+
+        <p>
+
+            &copy; 2026 Pemerintah & Panitia
+            Kelurahan Senden.
+
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,678 @@
+/* ==========================================
+   RESET & GLOBAL STYLES
+   ========================================== */
+
+/* Mengambil font Inter dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Mengatur semua elemen */
+* {
+    /* Menghilangkan margin bawaan */
+    margin: 0;
+
+    /* Menghilangkan padding bawaan */
+    padding: 0;
+
+    /* Agar ukuran elemen lebih rapi */
+    box-sizing: border-box;
+
+    /* Scroll halus */
+    scroll-behavior: smooth;
+}
+
+/* ==========================================
+   BODY WEBSITE
+   ========================================== */
+
+body {
+    /* Font utama */
+    font-family: 'Inter', sans-serif;
+
+    /* Warna background */
+    background: #f4f6f8;
+
+    /* Warna teks */
+    color: #2d3748;
+
+    /* Tinggi antar baris */
+    line-height: 1.8;
+
+    /* Menghilangkan scroll horizontal */
+    overflow-x: hidden;
+}
+
+/* ==========================================
+   CONTAINER
+   ========================================== */
+
+.container {
+    /* Lebar maksimal */
+    max-width: 1200px;
+
+    /* Posisi tengah */
+    margin: auto;
+
+    /* Jarak kanan kiri */
+    padding: 0 24px;
+}
+
+/* ==========================================
+   SECTION GLOBAL
+   ========================================== */
+
+section {
+    /* Jarak section */
+    padding: 80px 20px;
+
+    /* Teks tengah */
+    text-align: center;
+}
+
+/* Judul section */
+section h2 {
+    /* Ukuran font */
+    font-size: 2.8rem;
+
+    /* Ketebalan */
+    font-weight: 700;
+
+    /* Warna */
+    color: #1e293b;
+
+    /* Jarak bawah */
+    margin-bottom: 10px;
+}
+
+/* Paragraf section */
+section p {
+    /* Ukuran */
+    font-size: 1.05rem;
+
+    /* Warna */
+    color: #4a5568;
+
+    /* Lebar maksimal */
+    max-width: 850px;
+
+    /* Tengah */
+    margin: auto;
+}
+
+/* ==========================================
+   GARIS DEKORASI
+   ========================================== */
+
+.line {
+    /* Lebar garis */
+    width: 70px;
+
+    /* Tinggi garis */
+    height: 4px;
+
+    /* Warna */
+    background: #00b050;
+
+    /* Posisi tengah */
+    margin: 18px auto 30px auto;
+
+    /* Membulat */
+    border-radius: 100px;
+}
+
+/* ==========================================
+   HEADER WEBSITE
+   ========================================== */
+
+header {
+    /* Background gradasi */
+    background: linear-gradient(135deg, #006400, #00a859);
+
+    /* Warna teks */
+    color: white;
+
+    /* Tengah */
+    text-align: center;
+
+    /* Jarak bawah */
+    padding-bottom: 40px;
+
+    /* Bayangan */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Banner header */
+.header-banner {
+    /* Lebar penuh */
+    width: 100%;
+
+    /* Mengubah tinggi menjadi auto agar gambar tidak ditarik paksa (penyebab blur) */
+    height: auto; 
+
+    /* Menjaga bentuk asli gambar */
+    object-fit: contain; 
+
+    /* Sedikit gelap agar teks terbaca */
+    filter: brightness(0.9);
+
+    /* Memaksa browser merender sisa piksel agar lebih tajam dan crisp */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+/* Container header */
+.header-container {
+    /* Jarak atas */
+    padding-top: 40px;
+}
+
+/* Judul header */
+header h1 {
+    /* Ukuran */
+    font-size: 3rem;
+
+    /* Ketebalan */
+    font-weight: 700;
+
+    /* Jarak bawah */
+    margin-bottom: 12px;
+}
+
+/* Paragraf header */
+header p {
+    /* Ukuran */
+    font-size: 1.15rem;
+
+    /* Transparansi */
+    opacity: 0.95;
+}
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+
+.hero {
+    /* Background gambar + overlay */
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('assets/Gambar/banner_agustusan.webp')
+    no-repeat center center/cover;
+
+    /* Tinggi hero */
+    height: 80vh;
+
+    /* Flexbox */
+    display: flex;
+
+    /* Tengah vertikal */
+    align-items: center;
+
+    /* Tengah horizontal */
+    justify-content: center;
+
+    /* Teks tengah */
+    text-align: center;
+
+    /* Padding */
+    padding: 20px;
+}
+
+/* Judul hero */
+.hero-content h2 {
+    /* Ukuran */
+    font-size: 4rem;
+
+    /* Warna */
+    color: #fff700;
+
+    /* Ketebalan */
+    font-weight: 700;
+
+    /* Bayangan teks */
+    text-shadow: 0 5px 15px rgba(0,0,0,0.4);
+
+    /* Jarak bawah */
+    margin-bottom: 20px;
+}
+
+/* Text hero */
+.hero-content p {
+    /* Ukuran */
+    font-size: 1.2rem;
+
+    /* Warna */
+    color: #f8fafc;
+
+    /* Lebar maksimal */
+    max-width: 750px;
+
+    /* Tengah */
+    margin: auto;
+}
+
+/* ==========================================
+   NAVBAR
+   ========================================== */
+
+nav {
+    /* Background */
+    background: rgba(0, 128, 0, 0.96);
+
+    /* Blur */
+    backdrop-filter: blur(10px);
+
+    /* Sticky */
+    position: sticky;
+
+    /* Menempel atas */
+    top: 0;
+
+    /* Layer */
+    z-index: 1000;
+
+    /* Padding */
+    padding: 16px 10px;
+
+    /* Tengah */
+    text-align: center;
+
+    /* Bayangan */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* Link navbar */
+nav a {
+    /* Warna */
+    color: rgba(255,255,255,0.9);
+
+    /* Hilangkan underline */
+    text-decoration: none;
+
+    /* Jarak */
+    margin: 0 10px;
+
+    /* Padding */
+    padding: 10px 18px;
+
+    /* Membulat */
+    border-radius: 10px;
+
+    /* Ketebalan */
+    font-weight: 600;
+
+    /* Animasi */
+    transition: all 0.3s ease;
+}
+
+/* Hover navbar */
+nav a:hover,
+nav a.active {
+    /* Background hover */
+    background: rgba(255,255,255,0.18);
+
+    /* Warna teks */
+    color: white;
+}
+
+/* ==========================================
+   VISI MISI
+   ========================================== */
+
+.visi-misi {
+    /* Background */
+    background: white;
+
+    /* Padding */
+    padding: 50px;
+
+    /* Membulat */
+    border-radius: 20px;
+
+    /* Bayangan */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+
+    /* Lebar maksimal */
+    max-width: 1000px;
+
+    /* Tengah */
+    margin: 40px auto;
+}
+
+/* Judul visi misi */
+.visi-misi h3 {
+    /* Ukuran */
+    font-size: 1.6rem;
+
+    /* Warna */
+    color: #0f172a;
+
+    /* Jarak bawah */
+    margin-bottom: 20px;
+}
+
+/* Text visi */
+.visi {
+    /* Ukuran */
+    font-size: 1.2rem;
+
+    /* Ketebalan */
+    font-weight: 600;
+
+    /* Warna */
+    color: #008000;
+
+    /* Jarak bawah */
+    margin-bottom: 35px;
+}
+
+/* List misi */
+.visi-misi ol {
+    /* Agar tidak full */
+    display: inline-block;
+
+    /* Rata kiri */
+    text-align: left;
+
+    /* Jarak atas */
+    margin-top: 15px;
+}
+
+/* Item list */
+.visi-misi ol li {
+    /* Jarak bawah */
+    margin-bottom: 12px;
+
+    /* Ukuran */
+    font-size: 1.05rem;
+}
+
+/* ==========================================
+   HALAMAN LOMBA
+   ========================================== */
+
+.page-section {
+    /* Jarak */
+    padding: 80px 20px;
+
+    /* Tengah */
+    text-align: center;
+}
+
+/* Text pembuka */
+.lead {
+    /* Ukuran */
+    font-size: 1.1rem;
+
+    /* Warna */
+    color: #475569;
+
+    /* Lebar */
+    max-width: 800px;
+
+    /* Tengah */
+    margin: 0 auto 40px auto;
+}
+
+/* ==========================================
+   FILTER BUTTON
+   ========================================== */
+
+.filter-container {
+    /* Jarak bawah */
+    margin-bottom: 50px;
+}
+
+/* Tombol filter */
+.filter-btn {
+    /* Background */
+    background: white;
+
+    /* Border */
+    border: 2px solid #00a859;
+
+    /* Warna teks */
+    color: #00a859;
+
+    /* Padding */
+    padding: 12px 22px;
+
+    /* Margin */
+    margin: 5px;
+
+    /* Membulat */
+    border-radius: 12px;
+
+    /* Ketebalan */
+    font-weight: 600;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Animasi */
+    transition: all 0.3s ease;
+}
+
+/* Hover tombol */
+.filter-btn:hover {
+    /* Background */
+    background: #00a859;
+
+    /* Warna teks */
+    color: white;
+}
+
+/* Tombol aktif */
+.btn-active {
+    /* Background */
+    background: #00a859;
+
+    /* Warna teks */
+    color: white;
+}
+
+/* ==========================================
+   CONTAINER CARD (Sudah Diperbarui)
+   ========================================== */
+
+.profil-cards {
+    /* Grid */
+    display: grid;
+
+    /* Mengunci pembagian menjadi 4 kolom sejajar di desktop */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* Jarak antar card disesuaikan sedikit agar pas */
+    gap: 20px;
+
+    /* Lebar maksimal */
+    max-width: 1200px;
+
+    /* Tengah */
+    margin: auto;
+}
+
+/* Mengatur gambar di dalam card lomba agar ukurannya rapi dan tidak meluap */
+.profil-cards .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   CARD LOMBA
+   ========================================== */
+
+.card {
+    /* Background */
+    background: white;
+
+    /* Padding */
+    padding: 25px 15px; /* Dipersempit sedikit agar isi teks pas berjejer 4 */
+
+    /* Membulat */
+    border-radius: 22px;
+
+    /* Bayangan */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+
+    /* Posisi */
+    position: relative;
+
+    /* Overflow */
+    overflow: hidden;
+
+    /* Animasi */
+    transition: all 0.3s ease;
+}
+
+/* Hover card */
+.card:hover {
+    /* Naik */
+    transform: translateY(-8px);
+
+    /* Bayangan lebih besar */
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+/* Garis atas card */
+.card::before {
+    content: "";
+
+    /* Posisi */
+    position: absolute;
+
+    /* Atas */
+    top: 0;
+
+    /* Kiri */
+    left: 0;
+
+    /* Lebar */
+    width: 100%;
+
+    /* Tinggi */
+    height: 6px;
+
+    /* Warna */
+    background: linear-gradient(to right, #00a859, #00d26a);
+}
+
+/* Judul lomba */
+.card h3 {
+    /* Ukuran */
+    font-size: 1.25rem; /* Diperkecil agar judul panjang tidak berantakan di 4 kolom */
+
+    /* Warna */
+    color: #0f172a;
+
+    /* Jarak bawah */
+    margin-bottom: 10px;
+}
+
+/* Text peserta / detail info hijau */
+.card div {
+    /* Warna */
+    color: #00a859 !important;
+
+    /* Tebal */
+    font-weight: 600;
+
+    /* Margin */
+    margin-bottom: 12px !important;
+}
+
+/* Deskripsi */
+.card p {
+    /* Warna */
+    color: #475569;
+
+    /* Ukuran */
+    font-size: 0.88rem; /* Diatur sedikit lebih kecil agar pas */
+
+    /* Tinggi baris */
+    line-height: 1.6;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+    /* Background */
+    background: #006400;
+
+    /* Warna */
+    color: white;
+
+    /* Tengah */
+    text-align: center;
+
+    /* Padding */
+    padding: 25px;
+
+    /* Jarak atas */
+    margin-top: 80px;
+}
+
+/* ==========================================
+   RESPONSIVE MOBILE (Sudah Diperbarui)
+   ========================================== */
+
+@media (max-width: 1024px) {
+    /* Tampilan tablet membagi menjadi 2 kolom agar tidak terlalu sempit */
+    .profil-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Hero mobile */
+    .hero-content h2 {
+        /* Ukuran kecil */
+        font-size: 2.5rem;
+    }
+
+    /* Navbar mobile */
+    nav a {
+        /* Per baris */
+        display: block;
+
+        /* Tengah */
+        margin: 10px auto;
+
+        /* Lebar */
+        width: 80%;
+    }
+
+    /* Section mobile */
+    section {
+        /* Padding */
+        padding: 60px 20px;
+    }
+
+    /* Box visi misi */
+    .visi-misi {
+        /* Padding */
+        padding: 30px 20px;
+    }
+
+    /* Tampilan HP menjadi 1 kolom memanjang kebawah */
+    .profil-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Card mobile */
+    .card {
+        /* Padding */
+        padding: 25px;
+    }
+
+    /* Tombol mobile */
+    .filter-btn {
+        /* Lebar */
+        width: 90%;
+    }
+}

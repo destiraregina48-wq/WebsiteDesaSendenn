@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="id"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Unduhan Dokumen - Senden</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Gaya khusus untuk grid kotak unduhan */
+        .unduhan-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 900px;
+            margin: 40px auto 60px auto;
+            padding: 0 20px;
+        }
+
+        /* Desain Kotak Unduhan */
+        .unduhan-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-top: 5px solid #008000; /* Garis hijau atas */
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .unduhan-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+        }
+
+        .unduhan-card h3 {
+            color: #004d00;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .unduhan-card p {
+            color: #718096;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Gaya tombol unduh */
+        .btn-unduh {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 24px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn-unduh:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body> 
+
+    <nav id="navbar"> 
+        <a href="index.html">Home</a> 
+        <a href="kategori.html">Kategori Lomba</a> 
+        <a href="jalan-sehat.html">Kategori Jalan Sehat</a> 
+        <a href="galeri.html">Galeri Foto</a> 
+        <a href="unduhan.html" class="active">Unduhan</a> 
+        <a href="kontak.html">Info Panitia</a> 
+    </nav>
+
+    <section class="page-section">
+        <div class="container">
+            <h2 style="text-align: center;">Halaman Unduhan</h2>
+            <div class="line"></div>
+            <p style="text-align: center; color: #4a5568;" class="lead">Silakan unduh formulir pendaftaran, pamflet, atau jadwal PDF resmi dari Panitia Senden di bawah ini.</p>
+            
+            <div class="unduhan-grid">
+                
+                <div class="unduhan-card">
+                    <h3>Surat Undangan Kegiatan</h3>
+                    <p>Unduh surat resmi undangan Lomba Agustusan dan Jalan Sehat format Microsoft Word (.docx) untuk warga.</p>
+                    <a href="assets/Surat/SURAT EVENT.pdf" download class="btn-unduh">📄 Unduh Dokumen</a>
+                </div>
+
+                <div class="unduhan-card">
+                    <h3>Flyer / Pamflet</h3>
+                    <p>Unduh poster digital informasi rangkaian kegiatan kemerdekaan Desa Senden untuk dibagikan ke media sosial.</p>
+                    <a href="assets/Flyer/Flyer.jpg" download="Flyer_Semarak_Agustus_Senden.png" class="btn-unduh">🖼️ Unduh Flyer</a>
+                    <a href="assets/Flyer/Flyer fiks.jpg" download="Flyer_Semarak_Agustus_Senden.png" class="btn-unduh">🖼️ Unduh Flyer</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer> 
+        <p>&copy; 2026 Panitia Semarak Agustus Kelurahan Senden. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>

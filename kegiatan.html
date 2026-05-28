@@ -1,0 +1,194 @@
+<!DOCTYPE html> <!-- Menentukan tipe dokumen HTML5 -->
+
+<html lang="id"> <!-- Bahasa website Indonesia -->
+
+<head> <!-- Bagian kepala website -->
+
+    <meta charset="UTF-8"> <!-- Agar karakter terbaca normal -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Membuat website responsive -->
+
+    <title>Agenda Kegiatan - Website Resmi Desa Senden</title>
+    <!-- Judul halaman -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Menghubungkan file CSS -->
+
+    <style>
+
+        /* Box detail kegiatan */
+        .kegiatan-detail-box {
+
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            text-align: left;
+            max-width: 850px;
+            margin: 30px auto;
+
+        }
+
+        /* Paragraf isi kegiatan */
+        .kegiatan-detail-box p {
+
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #2d3748;
+
+        }
+
+        /* Tulisan highlight hijau */
+        .highlight-text {
+
+            font-weight: 600;
+            color: #008000;
+
+        }
+
+        /* Box lokasi kegiatan */
+        .location-box {
+
+            margin-top: 15px;
+            padding: 12px 20px;
+            background-color: #f7fafc;
+            border-left: 4px solid #008000;
+            border-radius: 4px;
+            font-weight: 500;
+
+        }
+
+    </style>
+
+</head>
+
+<body> <!-- Isi website -->
+
+    <!-- Navbar/menu navigasi -->
+    <nav id="navbar">
+
+        <!-- Menu home -->
+        <a href="index.html">
+            Home
+        </a>
+
+        <!-- Menu kategori lomba -->
+        <a href="kategori.html">
+            Kategori Lomba
+        </a>
+
+        <!-- Menu jalan sehat -->
+        <a href="jalan-sehat.html">
+            Kategori Jalan Sehat
+        </a>
+
+        <!-- Menu galeri -->
+        <a href="galeri.html">
+            Galeri Foto
+        </a>
+
+        <!-- Menu unduhan -->
+        <a href="unduhan.html">
+            Unduhan
+        </a>
+
+        <!-- Menu kontak -->
+        <a href="kontak.html">
+            Info Panitia
+        </a>
+
+    </nav>
+
+    <!-- Section utama -->
+    <section class="page-section">
+
+        <div class="container">
+
+            <!-- Judul halaman -->
+            <h2>
+                Agenda Kegiatan Mendatang
+            </h2>
+
+            <!-- Garis dekorasi -->
+            <div class="line"></div>
+
+            <!-- Box isi kegiatan -->
+            <div class="kegiatan-detail-box">
+
+                <!-- Penjelasan kegiatan -->
+                <p>
+
+                    Kegiatan selanjutnya adalah
+
+                    <span class="highlight-text">
+
+                        lomba anak-anak saat agustusan
+
+                    </span>
+
+                    seperti lomba sedotan,
+                    menumpuk kaleng,
+                    dan mewarnai.
+
+                </p>
+
+                <!-- Box lokasi -->
+                <div class="location-box">
+
+                    📍
+                    <strong>
+                        Lokasi Kegiatan:
+                    </strong>
+
+                    Perempatan Makam Desa Senden
+
+                </div>
+
+                <br>
+
+                <!-- Penjelasan tambahan -->
+                <p>
+
+                    Mari seluruh warga Desa Senden
+                    ikut meramaikan kegiatan
+                    kemerdekaan bersama.
+
+                </p>
+
+            </div>
+
+            <!-- Tombol kembali -->
+            <a 
+            href="index.html"
+            class="btn"
+            style="display: inline-block; margin-top: 20px;">
+
+                ← Kembali ke Beranda
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer website -->
+    <footer>
+
+        <p>
+
+            &copy; 2026 Pemerintah & Panitia
+            Kelurahan Senden.
+
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

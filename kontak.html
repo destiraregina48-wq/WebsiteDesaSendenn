@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hubungi Panitia - Website Resmi Desa Senden</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================
+           STYLE HALAMAN KONTAK
+        ========================== */
+
+        /* Container utama kontak */
+        .kontak-container {
+
+            max-width: 1100px; /* Lebar maksimal container */
+            margin: auto; /* Membuat container berada di tengah */
+
+        }
+
+        /* Wrapper isi kontak */
+        .kontak-wrapper {
+
+            display: grid; /* Menggunakan sistem grid */
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsive */
+            gap: 30px; /* Jarak antar box */
+            margin-top: 30px; /* Jarak dari atas */
+
+        }
+
+        /* Box informasi */
+        .info-box {
+
+            background: #ffffff; /* Warna background putih */
+            padding: 30px; /* Jarak isi ke tepi box */
+            border-radius: 16px; /* Membuat sudut melengkung */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04); /* Efek bayangan */
+
+        }
+
+        /* Judul box */
+        .info-box h3 {
+
+            color: #004d00; /* Warna hijau tua */
+            margin-bottom: 20px; /* Jarak bawah */
+
+        }
+
+        /* Item informasi */
+        .info-item {
+
+            margin-bottom: 18px; /* Jarak antar item */
+            line-height: 1.6; /* Tinggi baris */
+            color: #4a5568; /* Warna teks */
+
+        }
+
+        /* Tulisan tebal */
+        .info-item strong {
+
+            color: #2d3748; /* Warna teks lebih gelap */
+
+        }
+
+        /* Mengatur tampilan link agar rapi */
+        .wa-link {
+            color: #004d00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .wa-link:hover {
+            text-decoration: underline; /* Memberi efek garis bawah saat kursor di atasnya */
+        }
+
+        /* Box maps */
+        .map-box {
+
+            border-radius: 16px; /* Sudut melengkung */
+            overflow: hidden; /* Menyembunyikan bagian keluar */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04); /* Bayangan */
+
+        }
+
+        /* Tampilan iframe maps */
+        .map-box iframe {
+
+            width: 100%; /* Lebar penuh */
+            height: 100%; /* Tinggi penuh */
+            min-height: 350px; /* Tinggi minimal */
+            border: 0; /* Menghilangkan border */
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav id="navbar">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="kategori.html">
+            Kategori Lomba
+        </a>
+
+        <a href="jalan-sehat.html">
+            Kategori Jalan Sehat
+        </a>
+
+        <a href="galeri.html">
+            Galeri Foto
+        </a>
+
+        <a href="unduhan.html">
+            Unduhan
+        </a>
+
+        <a href="kontak.html" class="active">
+            Info Panitia
+        </a>
+
+    </nav>
+
+    <section class="page-section">
+
+        <div class="container kontak-container">
+
+            <h2>
+
+                Kontak Panitia & Lokasi
+
+            </h2>
+
+            <div class="line"></div>
+
+            <div class="kontak-wrapper">
+
+                <div class="info-box">
+
+                    <h3>
+
+                        Sekretariat Karang Taruna
+
+                    </h3>
+
+                    <div class="info-item">
+
+                        <strong>
+                            📍 Lokasi:
+                        </strong>
+
+                        <br>
+
+                        Desa Senden,
+                        Kecamatan Ngawen,
+                        Kabupaten Klaten
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <strong>
+                            📞 WhatsApp:
+                        </strong>
+
+                        <br>
+
+                        <a href="https://wa.me/62882003506558" target="_blank" class="wa-link">
+                            0882003506558
+                        </a> (Dendi Irawan)
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <strong>
+                            ✉️ Email:
+                        </strong>
+
+                        <br>
+
+                        sendenofficial@gmail.com
+
+                    </div>
+
+                </div>
+
+                <div class="map-box">
+
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15814.735165688537!2d110.58132049999999!3d-7.67442055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a46bebe501cd9%3A0x8f1cc34bd2304ebd!2sSenden%2C%20Kec.%20Ngawen%2C%20Kabupaten%20Klaten%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1716664500000!5m2!1sid!2sid"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+
+            © 2026 Pemerintah & Panitia
+            Kelurahan Senden.
+
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
